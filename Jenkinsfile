@@ -15,4 +15,9 @@ pipeline {
       }
     }
   }
+  post {
+        always {
+            emailext to: 'snehas7@hexaware.com', subject: 'Testing Jenkins EMail', body: 'The pipeline is running...test done'
+        }
+    }
 }
