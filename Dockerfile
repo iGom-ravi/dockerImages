@@ -1,3 +1,3 @@
-FROM alpine:latest
-COPY README.md /home
-RUN apk add curl
+FROM node:16.13.1-alpine
+
+RUN apk add -U subversion
